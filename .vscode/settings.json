@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "glew.h": "c",
+        "freeglut.h": "c",
+        "glut.h": "c",
+        "glfw3.h": "c"
+    }
+}

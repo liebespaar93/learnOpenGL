@@ -1,9 +1,9 @@
-INCLUDES = -I/opt/homebrew/include
-LIBPATHS = -L/opt/homebrew/lib
+INCLUDES = -I /opt/homebrew/include
+LIBPATHS = -L /opt/homebrew/lib
 
 CFLAGS = -Wall -Wextra $(INCLUDES)
 
-LIBS = $(LIBPATHS) -lGL -lGLEW -lglfw
+LIBS = $(LIBPATHS) -lGLEW -lglfw -framework OpenGL
 
 SRCS = main.c
 

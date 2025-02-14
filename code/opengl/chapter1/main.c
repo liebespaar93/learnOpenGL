@@ -1,5 +1,8 @@
+#define GL_SILENCE_DEPRECATION
+
 #include <stdlib.h>
 #include <stdio.h>
+#include <OpenGL/gl3.h>
 #include <GLFW/glfw3.h>
 
 #define WINDOW_TITLE_PREFIX "Chapter 1"
@@ -16,6 +19,9 @@ void RenderFunction(void);
 
 int main(int argc, char *argv[])
 {
+  (void)argc;
+  (void)argv;
+
   // input 값 정의
   Initialize(argc, argv);
 
@@ -35,6 +41,8 @@ int main(int argc, char *argv[])
 
 void Initialize(int argc, char *argv[])
 {
+  (void)argc;
+  (void)argv;
   InitWindow(argc, argv);
 
   fprintf(stdout, "INFO: OpenGL Version: %s\n", glGetString(GL_VERSION));
@@ -44,6 +52,8 @@ void Initialize(int argc, char *argv[])
 
 void InitWindow(int argc, char *argv[])
 {
+  (void)argc;
+  (void)argv;
   // opengl 기본정의
   if (!glfwInit())
   {
@@ -77,6 +87,8 @@ void InitWindow(int argc, char *argv[])
 
 void ResizeFunction(GLFWwindow *window, int Width, int Height)
 {
+  (void)window;
+  
   CurrentWidth = Width;
   CurrentHeight = Height;
   glViewport(0, 0, CurrentWidth, CurrentHeight);

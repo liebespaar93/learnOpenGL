@@ -1,0 +1,22 @@
+# C 언어 프로젝트에서 빌드된 파일들
+*.o
+*.a
+*.so
+*.out
+*.exe
+
+# Makefile의 기본 빌드 디렉토리
+build/
+obj/
+
+# VSCode 설정 파일
+.vscode/
+
+# C 언어에서 컴파일러와 관련된 임시 파일들
+*.dSYM/
+*.swp
+*.bak
+
+# 기타 운영체제 관련 파일
+.DS_Store
+Thumbs.db
